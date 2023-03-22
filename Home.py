@@ -1,16 +1,14 @@
 import streamlit as st
-
-import geopandas
-import streamlit as st
 import numpy as np
-
+import pandas as pd
 import plotly.express as px
-import glob
+from pycaret.regression import *
+from datetime import datetime
 
+from pycaret.datasets import get_data
 #df_init = pd.read_csv('bike-sharing_hourly.csv')
 
   
-from PIL import Image
 st.set_page_config(
     page_title="Real-Time Data Dashboard",
     page_icon="Active",
@@ -36,8 +34,11 @@ def navbar():
   		# </button>
   		<div class="collapse navbar-collapse" id="navbarNav">
     		<ul class="navbar-nav">
+                <li class="nav-item">
+        			<a  class="navbar-brand"class="nav-link" href="http://localhost:8501">Home</a>
+      			</li>
       			<li class="nav-item">
-        			<a  class="navbar-brand"class="nav-link" href="">Source Code</a>
+        			<a  class="navbar-brand"class="nav-link" href="https://github.com/julien-elia/Bike_Rentals/tree/main">Source Code</a>
       			</li>
       			<li class="nav-item">
         			<a class="navbar-brand" class="nav-link" href="https://weather.com/weather/tenday/l/Washington+DC?canonicalCityId=4c0ca6d01716c299f53606df83d99d5eb96b2ee0efbe3cd15d35ddd29dee93b2">Weather in DC</a>
@@ -50,7 +51,7 @@ def navbar():
     </nav>
     """, unsafe_allow_html=True)
 
-# Call the navbar function in your Streamlit app
+
 
 
 navbar()
@@ -59,29 +60,15 @@ navbar()
 
 
 st.title("Pedaling Forward")
-st.write("Data-driven analysis to improve bike sharing in :blue[Washington, D.C.] using data from :blue[2011] & :blue[2012]")
+st.write("Data-driven analysis to improve bike sharing in **Washington, D.C.** using data from **2011** & **2012**")
 
-#  --------------------- insert here ---------------------------------------------------
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import plotly.express as px
-import matplotlib.pyplot as plt
-import plotly.graph_objects as go
-from pycaret.regression import *
-from sklearn.metrics import r2_score
-import pickle
-from datetime import datetime
 
-#bike_df = pd.read_csv('bike-sharing_hourly.csv') #profile = True to get the insights
-from pycaret.datasets import get_data
 bike_df = get_data('bike-sharing_hourly', profile=False)
 
 
 
-import time
-import streamlit as st
-import streamlit as st
+
+
 
 st.title("Bike Analysis")
 
