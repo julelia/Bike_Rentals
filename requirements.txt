@@ -5,3 +5,5 @@ plotly
 hydralit_components
 numpy
 scikit-learn
+seaborn
+matplotlib
