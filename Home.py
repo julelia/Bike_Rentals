@@ -28,37 +28,25 @@ def navbar():
 	st.markdown(""" <style>.navbar-brand{padding-top: 50px;}</style>
 
     <nav class="navbar navbar-expand-lg navbar-dark navbar navbar-dark bg-dark fixed-top" style="height: 120px;">
-    	<a class = "navbar-brand" href="#"><img src="" width="320p"></a>
-    	<a class="navbar-brand" href="#">Bike Sharing</a>
-    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
+        <a class = "navbar-brand" href="#"><img src="" width="40p"></a>
+    	<a class = "navbar-brand" href="#"><img src="https://global.discourse-cdn.com/business7/uploads/streamlit/original/2X/f/f0d0d26db1f2d99da8472951c60e5a1b782eb6fe.png" width="200p" style="height: 120px;"></a>
+    	<a class = "navbar-brand" href="#"><img src="" width="40p"></a>
+    	# <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    	# 	<span class="navbar-toggler-icon"></span>
+  		# </button>
   		<div class="collapse navbar-collapse" id="navbarNav">
     		<ul class="navbar-nav">
-      			<li class="nav-item active" >
-        			<a class="navbar-brand" class="nav-link"  href="http://localhost:8501">Dashboard <span class="sr-only">(current)</span></a>
-      			</li>
       			<li class="nav-item">
         			<a  class="navbar-brand"class="nav-link" href="">Source Code</a>
       			</li>
       			<li class="nav-item">
-        			<a class="navbar-brand" class="nav-link" href="http://localhost:8501/Modelling">Modelling</a>
-      			</li>
-      			<li class="nav-item">
-        			<a class="navbar-brand" class="nav-link" href="http://localhost:8501/About_Us">Contact us</a>
-      			</li>                
-      			<li class="nav-item dropdown">
-      				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-      				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          				<a class="dropdown-item" href="#">Action</a>
-          				<a class="dropdown-item" href="#">Another action</a>
-          				<div class="dropdown-divider"></div>
-          				<a class="dropdown-item" href="#">Something else here</a>
-        			</div>
-      			</li>
+        			<a class="navbar-brand" class="nav-link" href="https://weather.com/weather/tenday/l/Washington+DC?canonicalCityId=4c0ca6d01716c299f53606df83d99d5eb96b2ee0efbe3cd15d35ddd29dee93b2">Weather in DC</a>
+      			</li> 
+                <li class="nav-item">
+        			<a class="navbar-brand" class="nav-link" href="https://capitalbikeshare.com/explore">Learn more</a>
+      			</li>               
       		</ul>
-  		</div>
-         
+  		</div>      
     </nav>
     """, unsafe_allow_html=True)
 
