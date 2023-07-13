@@ -1,5 +1,5 @@
 # Bike_Rentals
-Predicting and analysing bike rentals in the city of Washington D.C with PySpark
+Predicting and analysing bike rentals in the city of Washington D.C with streamlit and pycaret.
 
 You can run GroupC.ipynb using Jupyter Notebook or any other compiler of your choice.
 
